@@ -97,22 +97,7 @@ async def main(nama, email, c):
         await page.mouse.click(360, 669)
         await page.wait_for_timeout(2000)
         #await page.screenshot(path="11.png")
-        #await page.screenshot(path="12.png")
-
-        #aktif chat
-        #await page.wait_for_timeout(3000)
-        #await page.mouse.click(512, 1230)
-        #await page.wait_for_timeout(1000)
-        #await page.screenshot(path="13.png")
-        
-        #Ketik pesan
-        #await page.wait_for_timeout(5000)
-        #await page.keyboard.type("Halo admin")
-        #await page.screenshot(path="14.png")
-        #await page.wait_for_timeout(1000)
-        #await page.keyboard.press("Enter")
-        #await page.wait_for_timeout(3000)
-        #await page.screenshot(path="15.png")
+        print(f"Akun : ({c}) {nama} Selesai")
         await browser.close()
 
 if __name__ == "__main__":
